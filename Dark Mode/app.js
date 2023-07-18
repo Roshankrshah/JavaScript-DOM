@@ -1,7 +1,11 @@
-const toggle = document.querySelector('.toggle')
+const toggleBtn = document.querySelector('.btn')
 const articlesContainer = document.querySelector('.articles');
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+toggleBtn.addEventListener('click',()=>{
+    document.documentElement.classList.toggle('dark-theme');
+});
 
 const articlesData = articles.map((article) => {
     const { title, date, length, snippet } = article;

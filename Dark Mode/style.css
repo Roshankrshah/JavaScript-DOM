@@ -1,14 +1,14 @@
 :root {
     --clr-bcg: #fff;
     --clr-font: #282c35;
-    --clr-primary: #d23669;
+    --clr-primary: #119895;
     --clr-grey: #64748b;
 }
 
 .dark-theme {
     --clr-bcg: #282c35;
     --clr-font: #fff;
-    --clr-primary: #ffa7c4;
+    --clr-primary: #a7e9ff;
     --clr-grey: #cbd5e1;
 }
 
