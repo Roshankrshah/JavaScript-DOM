@@ -32,4 +32,35 @@ form.addEventListener('keyup',()=>{
         return product.title.toLowerCase().includes(inputValue);
     });
     displayProducts();
-})
+});
+
+const companiesDOM = document.querySelector('.companies');
+
+const displayButton = ()=>{
+    const buttons = ['all',
+    ...new Set(products.map((product)=>product.company))];
+
+    companiesDOM.innerHTML = buttons.map((company)=>{
+        return `<button class='company-btn' data-id='${company}'>${company}</button>`;
+    }).join('');
+}
+
+displayButton();
+
+companiesDOM.addEventListener('click',(e)=>{
+    const ele = e.target;
+    console.log("hi");
+    if(ele.classList.contains('company-btn')){
+        if(ele.dataset.id ==='all'){
+            filterProducts = [...products];
+        }
+        else{
+            filterProducts = products.filter((product)=>{
+                return product.company === ele.dataset.id;
+            });
+        }
+        searchInput.value = '';
+        displayProducts();
+    }
+});
+
