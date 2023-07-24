@@ -25,8 +25,8 @@ const displayProducts = (list)=>{
         <a class="single-product" href="product.html?id=${id}&name=john&age=25">
             <img src="${img}" class="single-product-img img" alt="${title}"/>
             <footer>
-                <h5 class="name">${title}</h5>
-                <span class="price">$${formatPrice}</span>
+              <h5 class="name">${title}</h5>
+              <span class="price">$${formatPrice}</span>
             </footer>
         </a>`
     }).join('');

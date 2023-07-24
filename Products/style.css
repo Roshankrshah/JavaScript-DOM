@@ -219,11 +219,15 @@ Products
 
 .single-product .name {
     margin-bottom: 0.25rem;
+    display: grid;
     text-transform: capitalize;
     letter-spacing: var(--letterSpacing);
     color: var(--grey-500);
 }
 
+footer {
+    display: grid;
+}
 .single-product .price {
     margin-bottom: 0;
     color: var(--grey-700);
