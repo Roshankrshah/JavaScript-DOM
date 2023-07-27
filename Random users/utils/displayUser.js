@@ -1,5 +1,5 @@
-import get from './getElement';
-import removeActive from './removeActive';
+import get from './getElement.js';
+import removeActive from './removeActive.js';
 
 const img = get('.user-img');
 const title = get('.user-title');
