@@ -1,3 +1,5 @@
+import { showLoading } from "./toggleLoading";
+
 const fetchDrinks = async (url)=>{
     showloading();
     try{
