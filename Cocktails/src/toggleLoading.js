@@ -1,4 +1,4 @@
-import get from './getElement';
+import get from './getElement.js';
 
 const loading = get('.loading');
 

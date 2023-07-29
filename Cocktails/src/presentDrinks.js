@@ -1,6 +1,6 @@
-import fetchDrinks from "./fetchDrinks";
-import displayDrinks from "./displayDrinks";
-import setDrink from "./setDrink";
+import fetchDrinks from "./fetchDrinks.js";
+import displayDrinks from "./displayDrinks.js";
+import setDrink from "./setDrink.js";
 
 const showDrinks = async(url)=>{
     const data = await fetchDrinks(url);
