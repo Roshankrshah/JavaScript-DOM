@@ -1,19 +1,19 @@
 const people = [
     {
-        img: 'https://www.course-api.com/images/people/person-3.jpeg',
-        name: 'peter doe',
+        img: './images/chris.jpeg',
+        name: 'Chris Hemsworth',
         job: 'product manager',
         text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis? `,
     },
     {
-        img: 'https://www.course-api.com/images/people/person-1.jpeg',
-        name: 'susan doe',
+        img: './images/henry-cavill.jpg',
+        name: 'henry cavill',
         job: 'developer',
         text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
     },
     {
-        img: 'https://www.course-api.com/images/people/person-2.jpeg',
-        name: 'emma doe',
+        img: './images/tom cruise.jpg',
+        name: 'tom cruise',
         job: 'designer',
         text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quoeius recusandae officia voluptas sint deserunt dicta nihil nam omnis?`,
     },
