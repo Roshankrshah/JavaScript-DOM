@@ -63,9 +63,9 @@ linkBtns.forEach((btn) => {
     })
 })
 
-/*hero.addEventListener('mouseover', (e) => {
+hero.addEventListener('mouseover', (e) => {
     submenu.classList.remove('show');
-});*/
+});
 
 nav.addEventListener('mouseover', (e) => {
     if (!e.target.classList.contains('link-btn')) {
