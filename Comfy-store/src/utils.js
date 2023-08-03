@@ -13,7 +13,7 @@ const getElement = (selection) =>{
 const formatPrice = (price)=>{
     let formattedPrice = new Intl.NumberFormat('en-Us',{
         style: 'currency',
-        currency: 'Rupees',
+        currency: 'USD',
     }).format((price/100).toFixed(2))
     return formattedPrice;
 }
