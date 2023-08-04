@@ -6,7 +6,7 @@ const setupCompanies = (store)=>{
     const companiesDOM = getElement('.companies');
     companiesDOM.innerHTML = companies.map((company)=>{
         return `<button class="company-btn">${company}</button>`;
-    }).join();
+    }).join('');
 
     companiesDOM.addEventListener('click',(e)=>{
         const element = e.target;
@@ -17,7 +17,7 @@ const setupCompanies = (store)=>{
             }else{
                 newStore = store.filter((product)=>product.company === e.target.textContent);
             }
-            display(newStore,getElement('.product-container'),true);
+            display(newStore,getElement('.products-container'),true);
         }
     });
 };
