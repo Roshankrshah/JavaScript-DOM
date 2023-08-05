@@ -47,7 +47,7 @@ function displayCartTotal(){
 
 function displayCartItemDOM(){
     cart.forEach((cartItem)=>{
-        addtoCartDOM(cartItem);
+        addToCartDOM(cartItem);
     });
 };
 
