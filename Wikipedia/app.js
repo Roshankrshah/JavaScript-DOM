@@ -5,7 +5,7 @@ const formDOM = document.querySelector('.form');
 const inputDOM = document.querySelector('.form-input');
 const resultsDOM = document.querySelector('.results');
 
-formDOM.addEventListener('submit', (e) => {
+formDOM.addEventListener('click', (e) => {
     e.preventDefault();
     const value = inputDOM.value;
     if (!value) {
