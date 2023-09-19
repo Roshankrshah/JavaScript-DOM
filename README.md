@@ -17,7 +17,7 @@
 - Gallery: https://65095782a043593639680e84--clinquant-babka-2cbd22.netlify.app/
 - Grocery Bud: https://650957cf25bea334229fd34a--beautiful-halva-4e7e49.netlify.app/
 - Lorem Ipsum: https://65095873fbb37b312ccf146d--prismatic-vacherin-2a2865.netlify.app/
-- Menu: https://650958cfe988622aade70c7d--gleeful-capybara-bf546d.netlify.app/
+- Menu: https://65096b875ed2ae3e7728cce7--whimsical-sherbet-59940f.netlify.app/
 - Modal: https://6509595da20b4e34618ee8f5--neon-pasca-1eb484.netlify.app/
 - Navbar: https://65095a411e691306fe2dda06--unique-crostata-ce5ed6.netlify.app/
 - Numbers: https://65095a9d5d971a2fabe26698--brilliant-manatee-7e7baf.netlify.app/
@@ -32,7 +32,7 @@
 - Stripe-Submenus: https://65095ee790e9f33664c203ac--voluble-lamington-6e6984.netlify.app/
 - Tabs: https://65095f4608aa41378a900b0b--rainbow-flan-89ae96.netlify.app/
 - Video Project: https://65095f8b6403783c58a39b95--dreamy-paletas-952c18.netlify.app/
-- Wikipedia: https://65095fd95d971a3300e268d3--resonant-beijinho-2b01f4.netlify.app/
+- Wikipedia: https://65096b006403784320a39ba5--fastidious-naiad-9ba631.netlify.app/
 
 ### Thanks John Smilga for this tutorial at udemy @ https://www.udemy.com/course/javascript-tutorial-for-beginners-w
-### Thanks to Netlify for hosting site @
+### Thanks to Netlify for hosting site @ https://app.netlify.com/
