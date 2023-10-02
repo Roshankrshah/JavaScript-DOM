@@ -1,6 +1,7 @@
 const template = document.createElement('template');
 
 template.innerHTML = `
+    <link rel="stylesheet" href="pet-card/style.css"/>
     <div class="pet-card">
         <div class="avatar">
             <img />
@@ -19,22 +20,44 @@ template.innerHTML = `
     </div>
     `;
 
-class PetCard extends HTMLElement{
-    constructor(){
+class PetCard extends HTMLElement {
+    constructor() {
         super();
-        this.attachShadow({mode: "open"});
+        this.showInfo = false;
+        this.attachShadow({ mode: "open" });
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
 
-    static get observedAttributes(){
-        return ["name","avatar"];
+    static get observedAttributes() {
+        return ["name", "avatar"];
     }
 
-    attributeChangedCallback(name,oldValue,newValue){
-        this.shadowRoot.querySelector(".details h2").innerText = 
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.shadowRoot.querySelector(".details h2").innerText =
             this.getAttribute('name');
-        this.shadowRoot.querySelector(".avatar img").src = 
+        this.shadowRoot.querySelector(".avatar img").src =
             this.getAttribute('avatar');
+        this.shadowRoot.querySelector(".avatar img").alt =
+            this.getAttribute("name");
+    }
+
+    toggleInfo = () => {
+        this.showInfo = !this.showInfo;
+        this.shadowRoot.querySelector(".info").style.display = this.showInfo ? "block" : "none";
+        this.shadowRoot.querySelector("#toggle").innerHTML = this.showInfo ? "Hide Details" : "Show Detail";
+    }
+
+    connectedCallback() {
+        this.shadowRoot.querySelector('#toggle').addEventListener('click', this.toggleInfo);
+        this.shadowRoot.querySelector("#greet")
+            .addEventListener("click", () =>
+                window.alert(`Hey there! I'm ${this.getAttribute("name")}`)
+            );
+    }
+
+    disconnectedCallback() {
+        this.shadowRoot.querySelector('#toggle').removeEventListener('click');
+        this.shadowRoot.querySelector('#greet').removeEventListener('click');
     }
 }
 
