@@ -33,6 +33,8 @@
 - Tabs: https://65095f4608aa41378a900b0b--rainbow-flan-89ae96.netlify.app/
 - Video Project: https://65095f8b6403783c58a39b95--dreamy-paletas-952c18.netlify.app/
 - Wikipedia: https://65096b006403784320a39ba5--fastidious-naiad-9ba631.netlify.app/
+- Web Component: https://651ff69a66b2f722319f5ad2--jolly-sprite-a1a758.netlify.app/
+- Morse Code Translator: https://651ff838c7b98924691aa162--frolicking-lily-442221.netlify.app/
 
 ### Thanks John Smilga for this tutorial at udemy @ https://www.udemy.com/course/javascript-tutorial-for-beginners-w
 ### Thanks to Netlify for hosting site @ https://app.netlify.com/
