@@ -5,6 +5,10 @@ export default class Column{
         this.elements.title = this.elements.root.querySelector(".kanban__column-title");
         this.elements.items = this.elements.root.querySelector(".kanban__column-items");
         this.elements.addItem = this.elements.root.querySelector(".kanban__add-item");
+
+        this.elements.root.dataset.id = id;
+        this.elements.title.textContent = title;
+        
     }
     static createRoot(){
         const range = document.createRange();
