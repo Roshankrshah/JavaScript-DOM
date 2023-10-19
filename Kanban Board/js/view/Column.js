@@ -1,3 +1,6 @@
+import KabanAPI from '../api/KanbanAPI.js';
+import Item from './Item.js';
+
 export default class Column{
     constructor(id,title){
         this.elements = {};
@@ -8,7 +11,14 @@ export default class Column{
 
         this.elements.root.dataset.id = id;
         this.elements.title.textContent = title;
-        
+
+        this.elements.addItem.addEventListener('click',()=>{
+
+        });
+
+        KabanAPI.getItems(id).forEach(item => {
+            console.log(item);
+        })
     }
     static createRoot(){
         const range = document.createRange();
@@ -22,5 +32,11 @@ export default class Column{
             <button class="kanban__add-item" type="button">+ Add</button>
         </div>
         `).children[0];
+    }
+
+    renderItem(data){
+        const item = new Item(data.id,data.content);
+
+        this.elements.items.appendChild(item.elements.root);
     }
 }
