@@ -2,14 +2,15 @@ import KanbanAPI from "../api/KanbanAPI.js";
 
 export default class DropZone{
     static createDropZone(){
-        const range = document.caretRangeFromPoint();
+        const range = document.createRange();
 
         range.selectNode(document.body);
 
         const dropZone = range.createContextualFragment(`
-        <div class ="kanban__dropzone></div>`).children[0];
+			<div class="kanban__dropzone"></div>
+		`).children[0];
 
-        dropZone.addEventListener('dragover',e=>{
+        dropZone.addEventListener("dragover",e=>{
             e.preventDefault();
             dropZone.classList.add('kanban__dropzone--active');
         });

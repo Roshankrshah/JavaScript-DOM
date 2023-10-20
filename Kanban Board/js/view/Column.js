@@ -1,5 +1,4 @@
 import KanbanAPI from '../api/KanbanAPI.js';
-import KabanAPI from '../api/KanbanAPI.js';
 import DropZone from './DropZone.js';
 import Item from './Item.js';
 
@@ -24,8 +23,8 @@ export default class Column{
 
         });
 
-        KabanAPI.getItems(id).forEach(item => {
-            console.log(item);
+        KanbanAPI.getItems(id).forEach(item => {
+            this.renderItem(item);
         })
     }
     static createRoot(){
