@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container disable">
         <h2>Easy Image Editor</h2>
         <div class="wrapper">
             <div class="editor-panel">
@@ -40,16 +40,18 @@
                 </div>
             </div>
             <div class="preview-img">
-                <img src="image-placeholder.svg" alt="preview-img">
+                <img src="image-placeholder.png" alt="preview-img">
             </div>
         </div>
         <div class="controls">
             <button class="reset-filter">Reset Filters</button>
             <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
                 <button class="choose-img">Choose File</button>
                 <button class="save-img">Save Image</button>
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
