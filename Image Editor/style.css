@@ -125,7 +125,7 @@ body {
     object-fit: contain;
 }
 
-.controls button{
+.controls button {
     font-size: 14px;
     cursor: pointer;
     color: #fff;
@@ -135,18 +135,52 @@ body {
     text-transform: uppercase;
 }
 
-.controls .reset-filter{
+.controls .reset-filter {
     color: #6C757D;
     border: 1px solid #6C757D;
 }
 
-.controls .choose-img{
+.controls .choose-img {
     background-color: #6C757D;
     border: 1px solid #6C757D;
 }
 
-.controls .save-img{
+.controls .save-img {
     margin-left: 5px;
     background-color: #5372F0;
     border: 1px solid #5372F0;
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 25px;
+    }
+
+    .container .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    .wrapper .editor-panel {
+        width: 100%;
+    }
+
+    .wrapper .preview-img {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .controls .row {
+        width: 100%;
+    }
+
+    .controls .row .save-img {
+        margin-left: 0px;
+    }
 }
